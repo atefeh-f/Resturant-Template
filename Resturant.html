@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<!--powerd by AtefeFathalian atefefathalian1373@gmail.com-->
+
+<head>
+<title>Resturant Template</title>
+<link rel="icon" type="image/x-icon" href="C:\Users\atefeh\Desktop\Mypro-FrontEnd\resturant Template\logo-Resturant\1x\Asset 3.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+span.constant-tilt-shake {
+  animation: tilt-shaking 0.5s infinite;
+}
+
+body,h1,h2,h3,h4,h5 {font-family: "Amatic SC", sans-serif}
+body {font-size: 40px;}
+
+
+body, html {height: 100%}
+.mySlides {display: none;}
+
+.formatButton{
+border-radius: 9px;
+width: 100px;
+height:50px;
+
+}
+@media only screen and (max-width: 600px) {img{max-height:650px;}; }
+
+
+@media screen and (min-width: 601px) {
+  p.rwdsize {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) { p.rwdsize {font-size:25px;}}
+
+</style>
+</head>
+<body class="w3-content w3-black" style="max-width:1500px;">
+<!-- Header with Slideshow -->
+<header class="w3-grayscale-min w3-display-container w3-text-white">
+  
+  <div class=" mySlides w3-animate-opacity ">
+    <img src="https://www.w3schools.com/w3images/pizza.jpg" alt="Image 1" style="min-width:500px;" width="100%" height="750">
+    <div class="w3-display-left w3-padding " style="width:350px">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 style="font-size:40px;">Pepperoni <span class="w3-right w3-tag w3-red w3-round"> <span style="text-decoration-line: line-through;" >15.50$</span>&nbsp &nbsp<span style="display: inline-block; font-weight:bold;" class="constant-tilt-shake">12$</span></h1> 
+        <hr class="w3-opacity">
+        <p style="font-size:25px">Sausage, olive, Cheese</p>
+      </div>
+    </div>
+  </div>
+  <div class=" mySlides w3-animate-opacity">
+    <img src="https://deedeedoes.com/wp-content/uploads/2018/01/black-bean-corn-salad.jpg" alt="Image 2" style="min-width:500px;" width="100%" height="750">
+    <div class="w3-display-left w3-padding " style="width:350px">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 style="font-size:40px;">Corn Salad<span class="w3-right w3-tag w3-red w3-round"> <span style="text-decoration-line: line-through;" >10$</span>&nbsp &nbsp<span style="display: inline-block; font-weight:bold;" class="constant-tilt-shake">6.5$</span></h1>
+        <hr class="w3-opacity">
+        <p style="font-size:25px">olive,corn,tomato,Parsley</p>
+      </div>
+    </div>
+  </div>
+  <div class=" mySlides w3-animate-opacity">
+    <img src="https://static.fanpage.it/wp-content/uploads/sites/22/2018/09/juicy-meat1.jpg" alt="Image 3" style="min-width:500px;" width="100%" height="750">
+    <div class="w3-display-left w3-padding " style="width:350px">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 style="font-size:40px;">steak<span class="w3-right w3-tag w3-red w3-round"> <span style="text-decoration-line: line-through;" >25$</span>&nbsp &nbsp<span style="display: inline-block; font-weight:bold;" class="constant-tilt-shake">20$</span></h1>
+        <hr class="w3-opacity">
+        <p style="font-size:25px">Beef, tomato, Bell pepper</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Discount List<i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Discount List <i class="fa fa-angle-right"></i></a>
+
+<!--Logo-->
+	<img src="C:\Users\atefeh\Desktop\Mypro-FrontEnd\resturant Template\logo-Resturant\1x\Asset 3.png" alt="logo" style="width:20%;" class="w3-display-topright w3-hide-large">
+	
+  
+	<img src="C:\Users\atefeh\Desktop\Mypro-FrontEnd\resturant Template\logo-Resturant\1x\Asset 3.png" alt="logo" style="width:auto;" class="w3-display-middle w3-jumbo w3-hide-medium w3-hide-small">
+	
+
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="formatButton w3-button w3-black">menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="formatButton w3-button w3-black">contact</button></p>
+	<p><button onclick="document.getElementById('comment').style.display='block'" class="formatButton w3-button w3-black">comments</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container" style="padding-bottom:60px;">
+    <p style="color:black; font-weight:bold;" class="rwdsize">42 Niloofar St, Tehran</p>
+    <p style="font-size:25px; color:black; font-weight:bold; ">powered by <a href="https://www.linkedin.com/in/atefe-fathalian/" target="_blank">Atefe Fathalian</a></p>
+  
+   </div>
+  
+</header>
+<!--The End Header slidebar-->
+
+
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large" style="font-family: Raleway, sans-serif">x</span>
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+   
+      <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+      <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      
+      <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+      <hr>
+
+      <h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+
+      <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <hr>
+
+      <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+      <p class="w3-text-grey">Ravioli filled with cheese</p>
+      <hr>
+      
+      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+      <hr>
+
+      <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+   
+      <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+      
+      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Tomatoes and mozzarella</p>
+    </div><br>
+
+  </div>
+</div>
+</div>
+
+
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large" style="font-family: Raleway, sans-serif">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p style="font-size:25px; color:black; font-weight:bold;">Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p style="font-size:20px"><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p style="font-size:20px"><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p style="font-size:20px"><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+        <p style="font-size:20px"><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p style="font-size:20px; color:white; font-weight:bold;"><button class="w3-button" type="submit" style="background-color:black">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- comments Modal -->
+<div id="comment" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom"> 
+    <div class="w3-container w3-black w3-display-container">
+	 
+      <span onclick="document.getElementById('comment').style.display='none'" class="w3-button w3-display-topright w3-large" style="font-family: Raleway, sans-serif">x</span>
+      <h1 class="w3-center" >comments</h1>
+	  
+	  
+	  <div class="w3-row w3-center w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openComment(event, 'post');" id="myLink2">
+        <div class="w3-col s6 tablink tablin w3-padding-large w3-hover-red">post</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openComment(event, 'comments');">
+        <div class="w3-col s6 tablink tablin w3-padding-large w3-hover-red">your opinions</div>
+      </a>
+    </div>
+	  
+    </div>
+	
+    <div class="w3-container comment w3-padding-32 w3-white" id="post">
+      <p style="font-size:25px; color:black; font-weight:bold;">Send us your ideas:</p>
+      <form action="/action_page.php" target="_blank">
+        <p style="font-size:20px"><textarea class="w3-input w3-border" rows="3" cols="8" maxlength="250">write here...</textarea></p>
+        <p style="font-size:20px; color:black;"><input class="w3-input w3-border" list="brows" placeholder="Food Name" required> <datalist id="brows">
+		  <option value="Margherita">
+		  <option value="Formaggio">
+		  <option value="Chicken">
+		  <option value="Pineapple'o'clock">
+		  <option value="Meat Town">
+		  <option value="Parma">
+		  <option value="Lasagna">
+		  <option value="Ravioli">
+		  <option value="Spaghetti Classica">
+		  <option value="Seafood pasta">
+		  <option value="Today's Soup">
+		  <option value="Bruschetta">
+		  <option value="Garlic bread">
+		  <option value="Tomozzarella">
+		</datalist></p>
+        <p style="font-size:20px; color:white; font-weight:bold;"><button class="w3-button" type="submit" style="background-color:black">SEND MESSAGE</button></p>
+      </form>
+    </div>
+	
+	    <div class="w3-container w3-padding-32 w3-white comment" id="comments">
+      <form action="/action_page.php">
+		<p style="font-size:25px; color:black; font-weight:bold;">select your food name for seeing all comments about it:</p>
+        <p style="font-size:20px; color:black;"><input placeholder="Food Name" class="w3-input w3-padding-16 w3-border" oninput="foodComment(value)" list="brows" required/> 
+			<datalist id="brows">
+			  <option value="Margherita">
+			  <option value="Formaggio">
+			  <option value="Chicken">
+			  <option value="Pineapple'o'clock">
+			  <option value="Meat Town">
+			  <option value="Spaghetti Classica">
+			  <option value="Seafood pasta">
+			</datalist></p>
+        <div id="allcomment" style="width:100%; height:100px; overflow-y:auto; border:2px solid #EEEEEE; border-radius:5px;">
+			<div id="Margherita" style="display:none">
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I dont like Margherita pizza. it have not any thing</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I like Margherita pizza. it was so good</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I love it.</p>
+			</div>
+			
+			<div id="Formaggio" style="display:none">
+			   <p style="font-size:25px;" class="w3-hover-light-grey">I like Formaggio pizza. it was good</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I like Formaggio pizza. I want to eat again from this food</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I love it.</p>
+			</div>
+			
+			<div id="Chicken" style="display:none">
+			   <p style="font-size:25px;" class="w3-hover-light-grey">I like Chicken. I cant forget its perfume</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I like Chicken pizza. I want to eat again from this food</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I dont like it.</p>
+			</div>
+			
+			<div id="Pineapple'o'clock" style="display:none">
+			   <p style="font-size:25px;" class="w3-hover-light-grey">I like Pineapple'o'clock pizza. it was good</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I like Pineapple'o'clock pizza. I want to eat again from this food</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I love it.</p>
+			</div>
+			
+			<div id="Meat Town" style="display:none">
+			   <p style="font-size:25px;" class="w3-hover-light-grey">I like Meat Town pizza. it was good</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I dont like it. it have any cheeze.</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I love it.</p>
+			</div>
+			
+			<div id="Spaghetti Classica" style="display:none">
+			   <p style="font-size:25px;" class="w3-hover-light-grey">I like Spaghetti. it was good</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I like Spaghetti. I want to eat again from this food</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I love soooo much this food.</p>
+			</div>
+			
+			<div id="Seafood pasta" style="display:none">
+			   <p style="font-size:25px;" class="w3-hover-light-grey">I like Seafood. it was good</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I like Seafood. I want to eat again from this food</p><hr>
+			  <p style="font-size:25px;" class="w3-hover-light-grey">I love it.</p>
+			</div>
+		
+		</div>
+		
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var y = document.getElementsByClassName("mySlides");
+  if (n > y.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = y.length}
+  for (i = 0; i < y.length; i++) {
+    y[i].style.display = "none";  
+  }
+  y[slideIndex-1].style.display = "block";  
+}
+
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+
+function openComment(evt, commentName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("comment");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablin");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(commentName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink2").click();
+
+
+function foodComment(value){
+document.getElementById("allcomment").style.border="2px solid black";
+var i;
+const foods = ["Margherita", "Formaggio", "Chicken","Pineapple'o'clock","Meat Town","Spaghetti Classica","Seafood pasta"];
+for (i=0;i<foods.length;i++){
+document.getElementById(foods[i]).style.display="none";
+if(value==foods[i]){
+document.getElementById(foods[i]).style.display="block";
+}
+}
+}
+</script>
+
+</body>
+</html>
+
